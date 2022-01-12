@@ -19,4 +19,12 @@ export default [
       Placeholder: () => <div>...LOADING...</div>,
     }),
   },
+  {
+    path: '/about2/:url_slug/',
+    exact: true,
+    component: asyncComponent({
+      loader: () => import('./About2'),
+      Placeholder: () => <div>...LOADING...</div>,
+    }),
+  },
 ];
